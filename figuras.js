@@ -1,58 +1,50 @@
 //Codigo cuadrado
 console.group("Cuadrado")
 
-const ladoCuadrado = 5
-console.log(`Lados del cuadrado miden: ${ladoCuadrado}c,`)
+function perimetroCuadrado(lado) {
+    return lado * 4
+}
 
-const perimetroCuadrado = ladoCuadrado * 4
-console.log(`El perimetro del cuadrado es: ${perimetroCuadrado}cm`)
-
-const areaCuadrado = ladoCuadrado * ladoCuadrado
-console.log(`El area del cuadrado es: ${areaCuadrado}cm2`) 
+function areaCuadrado(lado) {
+    return lado * lado
+}
 
 console.groupEnd()
 
 //Codigo triangulo
 console.group("Triangulo")
 
-const ladoTriangulo1 = 6
-const ladoTriangulo2 = 6
-const baseTriangulo = 4
-console.log(`Lados del triangulo miden: ${ladoTriangulo1}cm, ${ladoTriangulo2}cm, ${baseTriangulo}cm`)
+function perimetroTriangulo(lado1,lado2,base) {
+    return lado1 + lado2 + base
+}
 
-const alturaTriangulo = 5.5
-console.log(`La altura del triangulo es de: ${alturaTriangulo}cm`)
-
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo
-console.log(`El perimetro del triangulo es: ${perimetroTriangulo}cm`)
-
-const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2
-console.log(`El area del triangulo es: ${areaTriangulo}cm2`)
+function areaTriangulo(base,altura) {
+    return base * altura
+}
 
 console.groupEnd()
 
 //Ciruculo
 console.group("Circulo")
 
-//radio
-const radioCirculo = 4
-console.log(`El radio del circulo es: ${radioCirculo}cm`)
 
 //Diametro
-const diametroCirculo = radioCirculo * 2
-console.log(`El diametro del circulo es: ${diametroCirculo}cm`)
+function diametroCirculo(radio) { 
+    return radio * 2
+
+}
 
 //Pi
 const pi = Math.PI
-console.log(`Pi es: ${pi}`)
+
 
 //Circuferencia
-const perimetroCirculo = diametroCirculo * pi
-console.log(`El perimetro del circulo es: ${perimetroCirculo}cm`)
-
+const perimetroCirculo = radio => {
+    const diametro = diametroCirculo(radio) 
+    return diametro * pi
+}
 //Area
-const areaCirculo = (radioCirculo * radioCirculo) * pi
-console.log(`El area del circulo es: ${areaCirculo}cm2`)
+const areaCirculo = radio => (radio * radio) * pi
 
 console.groupEnd()
 
