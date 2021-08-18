@@ -9,3 +9,5 @@ Repositorio del curso practico de javascript con juandc
 - Segundo paso: Implementar las formulas en JS.
 - Tercer paso: Crear funciones.
 - Cuato paso: Integrar JS con HTML.
+
+## Taller #1: Porcentajes y descuentos.
