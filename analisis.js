@@ -7,7 +7,7 @@ function calcularMediaAritmetica(lista) {
     return promedio
 }
 const isEven = number => number % 2 === 0
-
+const roundToTwo = number => Math.round(number * 100) / 100
 //calculadora de medianas
 function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2)
@@ -37,7 +37,13 @@ const salariosColTop10 = salariosColSorted.slice(sliceStart, sliceCount)
 const medianaGeneralCol = medianaSalarios(salariosColSorted)
 const medianaTop10Col = medianaSalarios(salariosColTop10)
 
+function diferenciaSalarial(mediana, mediana10) {
+    return mediana10 / mediana
+}
+const dif = roundToTwo( diferenciaSalarial(medianaGeneralCol,medianaTop10Col) )
 console.log({
     medianaGeneralCol,
     medianaTop10Col
 })
+
+console.log(`El top 10 gana ${dif}x mas`)

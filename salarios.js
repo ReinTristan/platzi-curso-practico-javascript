@@ -73,9 +73,9 @@ colombia.push({
   })
   colombia.push({
     name: "Gisselle",
-    salary: 2000,
+    salary: 7000,
   })
   colombia.push({
     name: "Bill Gates",
-    salary: 100000000,
+    salary: 10000,
   })
