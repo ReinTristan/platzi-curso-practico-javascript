@@ -23,4 +23,7 @@ function calcularMediana(lista) {
     return mediana
 }
 
+console.group("Mediana")
+console.log(calcularMediana([1,1,1,2,2,2,3,4,5,5,5,6,7]))
+console.groupEnd()
 

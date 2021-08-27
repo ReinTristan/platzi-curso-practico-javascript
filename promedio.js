@@ -11,4 +11,6 @@ function calcularMediaAritmetica(lista) {
     const promedio = sumaLista / lista.length
     return promedio
 }
+console.group("promedio")
 console.log(calcularMediaAritmetica(lista1))
+console.groupEnd()

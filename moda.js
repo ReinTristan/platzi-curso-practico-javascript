@@ -13,6 +13,8 @@ function calcularModa(lista) {
     
     return moda
 }
+console.group("Moda")
 console.log(calcularModa([1,1,1,2,2,2,3,4,5,5,5,6,7]))
+console.groupEnd()
 
 
