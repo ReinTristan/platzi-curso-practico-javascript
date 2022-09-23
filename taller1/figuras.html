@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Figuras Geometricas | curso practico JS</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Red+Hat+Display:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./figuras.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Figuras Geometricas</h1>
+			<span class="subtitle"
+				>Este es el primer taller del curso practico de js</span
+			>
+		</header>
+		<main class="main">
+			<section class="card">
+				<h2>Cuadrado</h2>
+				<span class="subtitle">Area y perimetro</span>
+
+				<form action="">
+					<p>Escribe cuanto mide el lado del cuadrado</p>
+					<input type="number" id="inputCuadrado" />
+					<div class="btn-container">
+						<button type="button" onClick="calcularPerimetroCuadrado()">
+							Perimetro
+						</button>
+						<button type="button" onClick="calcularAreaCuadrado()">Area</button>
+					</div>
+				</form>
+			</section>
+			<section class="card">
+				<h2>Triangulo</h2>
+				<span>Area y perimetro</span>
+				<form action="">
+					<p>
+						Escribe cuanto mide el primer lado del triangulo
+					</p>
+					<input type="number" id="inputTriangulo1" /><br />
+					<p">
+						Escribe cuanto mide el segundo lado del triangulo
+					</label>
+					<input type="number" id="inputTriangulo2" /><br />
+					<p>
+						Escribe cuanto mide la base del triangulo
+					</p>
+					<input type="number" id="inputTriangulo3" /><br />
+					<button type="button" onClick="calcularPerimetroTriangulo()">
+						Perimetro
+					</button>
+					<button type="button" onClick="calcularAreaTriangulo()">Area</button>
+					<button type="button" onClick="calcularAlturaTriangulo()">
+						Altura
+					</button>
+				</form>
+			</section>
+			<section class="card">
+				<h2>Circulo</h2>
+				<span>Area y perimetro</span>
+
+				<form action="">
+					<p>
+						Escribe cuanto mide el primer lado del triangulo
+					</p>
+					<input type="number" id="inputCirculo" />
+					<div class="btn-container">
+
+						<button type="button" onClick="calcularPerimetroCirculo()">
+							Perimetro
+						</button>
+						<button type="button" onClick="calcularAreaCirculo()">Area</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<script src="./figuras.js"></script>
+	</body>
+</html>
